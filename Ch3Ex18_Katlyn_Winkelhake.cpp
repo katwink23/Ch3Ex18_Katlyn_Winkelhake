@@ -21,8 +21,7 @@ int main()
 	float totalInterest;
 	int interestTimes;
 	float interestYear;
-	float newSavings;
-		
+
 
 	cout << "What is your principal?" << endl;
 		cin >> principal;
