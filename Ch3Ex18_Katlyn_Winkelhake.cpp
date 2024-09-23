@@ -1,20 +1,47 @@
-// Ch3Ex18_Katlyn_Winkelhake.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+
+/*
+File Name: Ch3Ex18_Katlyn_Winkelhake.cpp
+Date: 9/23/2024
+Programmer: Katlyn Winkelhake
+Requirements:
+Write a program that asks for the princple, interest rate, and the number of times interest is compounded.
+It should display the report as shown in the example photo.
+*/
+
 
 #include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	double principle;
+	double interestRate;
+	double interestTimes;
+	double interest;
+		interest = principle * pow(1 + (interestRate / interestTimes))(interestTimes);
+	double newSavings;
+		newSavings = principle + interest;
+
+
+	cout << "What is your principle?" << endl;
+		cin >> principle;
+
+	cout << "What is your interest rate?" << endl;
+		cin >> interestRate;
+
+	cout << "How many times is your interest compounded in a year?" << endl;
+		cin >> interestTimes;
+
+	cout << setprecision(2) << showpoint << fixed;
+	cout << "Interest Rate:" << setw(6) << "$" << interestRate;
+	cout << "Times Compounded:" << setw(2) << interestTimes;
+	cout << "Principle:" << setw(10) << "$" << principle;
+	cout << "Interest:" << setw(11) << "$" << interest;
+	cout << "Amount in Savings:" << setw(1) << "$" << newSavings;
+
+
+	return 0;
+
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
